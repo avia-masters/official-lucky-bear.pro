@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="images/logo.png">
+<title>Безопасность Lucky Bear Casino — как защищён сайт и данные | 2026</title>
+<meta name="description" content="Безопасность Lucky Bear Casino: SSL/TLS 1.3, CSP, HSTS, 2FA, шифрование данных, защита от фишинга, лицензия Curaçao и рекомендации игрокам.">
+<meta name="theme-color" content="#0a1628">
+<link rel="canonical" href="https://official-lucky-bear.pro/security.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Безопасность Lucky Bear Casino">
+<meta property="og:description" content="SSL/TLS 1.3, CSP, HSTS, 2FA, шифрование данных, защита от фишинга.">
+<meta property="og:url" content="https://official-lucky-bear.pro/security.html">
+<meta property="og:image" content="https://official-lucky-bear.pro/images/logo.png">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113327680', 'ym');
+
+    ym(113327680, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113327680" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(160deg,#0a1628 0%,#0f2040 50%,#0a1628 100%);color:#d0e4f8;line-height:1.6;min-height:100vh}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+a{color:#4ab8ff;text-decoration:none;transition:.3s}
+a:hover{color:#7acbff}
+.skip{position:absolute;top:-100px;left:10px;background:linear-gradient(135deg,#1a7acc,#4ab8ff);color:#fff;padding:10px 20px;border-radius:0 0 8px 8px;z-index:1000;font-weight:700}
+.skip:focus{top:0}
+.site-header{background:rgba(10,22,40,.85);backdrop-filter:blur(20px);padding:6px 0;border-bottom:1px solid rgba(26,48,80,.5);position:sticky;top:0;z-index:100}
+.header-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:nowrap;gap:6px}
+.brand{display:flex;align-items:center;gap:8px;font-size:18px;font-weight:800;color:#fff;flex-shrink:0}
+.brand img{height:34px;width:auto;display:block}
+.menu-button{display:none;background:none;border:1px solid #1a3050;color:#d0e4f8;padding:5px 10px;border-radius:8px;cursor:pointer;font-size:13px}
+.main-nav{display:flex;align-items:center;gap:2px 6px;flex-wrap:nowrap;flex:1;justify-content:center}
+.main-nav a{color:#8aaac8;font-weight:500;font-size:11.5px;white-space:nowrap;padding:2px 3px}
+.main-nav a:hover{color:#4ab8ff}
+.main-nav a.active{color:#4ab8ff;border-bottom:2px solid #4ab8ff}
+.header-actions{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.age-badge{background:#1a3050;padding:3px 8px;border-radius:20px;font-weight:700;color:#4ab8ff;font-size:11px}
+.btn{display:inline-block;padding:7px 16px;border-radius:30px;font-weight:600;transition:.3s;border:none;cursor:pointer;font-size:12.5px;text-align:center}
+.btn.primary{background:linear-gradient(135deg,#1a7acc,#4ab8ff);color:#fff}
+.btn.primary:hover{transform:scale(1.04)}
+.btn.ghost{background:transparent;color:#8aaac8;border:1px solid #1a3050}
+.btn.ghost:hover{border-color:#4ab8ff;color:#4ab8ff}
+.btn.large{padding:14px 40px;font-size:18px}
+.page-hero{padding:50px 0 60px;background:linear-gradient(145deg,rgba(10,22,40,.8),rgba(15,32,64,.6));border-radius:0 0 40px 40px}
+.hero-grid{display:grid;grid-template-columns:2fr 1fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;background:rgba(26,48,80,.5);padding:4px 16px;border-radius:20px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#4ab8ff;margin-bottom:12px}
+.gradient-text{background:linear-gradient(135deg,#1a7acc,#4ab8ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.page-hero h1{font-size:42px;font-weight:800;margin-bottom:16px;color:#fff}
+.page-hero p{font-size:18px;color:#8aaac8;max-width:620px;margin-bottom:24px}
+.hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
+.stats-card{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:rgba(10,22,40,.6);border:1px solid rgba(26,48,80,.4);border-radius:20px;padding:30px 24px}
+.stats-card div{text-align:center}
+.stats-card strong{display:block;font-size:30px;background:linear-gradient(135deg,#1a7acc,#4ab8ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stats-card span{color:#8aaac8;font-size:14px}
+.section{padding:50px 0}
+.section.soft{background:rgba(10,22,40,.4)}
+.section-head{margin-bottom:30px}
+.section-head h2{font-size:30px;color:#fff;margin-bottom:8px}
+.section-head p{color:#8aaac8}
+.prose h2{font-size:26px;background:linear-gradient(135deg,#1a7acc,#4ab8ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:40px 0 12px}
+.prose h2:first-child{margin-top:0}
+.prose h3{font-size:20px;color:#fff;margin:24px 0 10px}
+.prose p{color:#d0e4f8;margin-bottom:16px}
+.prose ul{margin:0 0 16px 20px;color:#d0e4f8}
+.prose ul li{margin-bottom:8px}
+.fact-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:16px 0 24px}
+.fact-list div{background:rgba(17,29,53,.5);border:1px solid rgba(26,48,80,.4);border-radius:12px;padding:16px 20px}
+.fact-list div strong{display:block;color:#4ab8ff;font-size:15px;margin-bottom:4px}
+.fact-list div span{color:#8aaac8;font-size:14px}
+.table-wrap{overflow-x:auto;margin:16px 0 24px}
+.table-wrap table{width:100%;background:rgba(17,29,53,.5);border-radius:12px;border-collapse:collapse;font-size:15px;border:1px solid rgba(26,48,80,.4)}
+.table-wrap th{background:rgba(26,48,80,.4);color:#4ab8ff;padding:14px 18px;text-align:left;font-weight:600}
+.table-wrap td{padding:12px 18px;border-bottom:1px solid rgba(26,48,80,.3);color:#d0e4f8}
+.faq details{background:rgba(17,29,53,.5);border:1px solid rgba(26,48,80,.4);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+.faq details:hover{border-color:#4ab8ff}
+.faq summary{font-weight:600;color:#fff;cursor:pointer;font-size:17px}
+.faq details p{color:#d0e4f8;padding-top:12px;margin:0}
+.footer-cta{background:linear-gradient(145deg,rgba(10,22,40,.8),rgba(15,32,64,.6));border-top:1px solid rgba(26,48,80,.3);border-bottom:1px solid rgba(26,48,80,.3);padding:50px 0}
+.footer-cta .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:30px}
+.footer-cta h2{color:#fff;font-size:28px}
+.footer-cta p{color:#8aaac8;max-width:520px}
+.site-footer{background:rgba(10,22,40,.8);padding:40px 0 20px;border-top:1px solid rgba(26,48,80,.3)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:30px}
+.footer-brand p{color:#8aaac8;font-size:14px;margin:12px 0}
+.footer-trust{display:flex;gap:12px;flex-wrap:wrap}
+.footer-trust span{background:rgba(26,48,80,.4);padding:2px 12px;border-radius:20px;font-size:12px;color:#8aaac8}
+.footer-grid strong{background:linear-gradient(135deg,#1a7acc,#4ab8ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block;margin-bottom:10px}
+.footer-grid a{display:block;color:#8aaac8;font-size:14px;padding:3px 0}
+.footer-grid a:hover{color:#4ab8ff}
+.footer-bottom{border-top:1px solid rgba(26,48,80,.3);padding-top:20px;margin-top:30px;display:flex;justify-content:space-between;flex-wrap:wrap;font-size:14px;color:#5a7a9a}
+.mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(10,22,40,.95);backdrop-filter:blur(16px);border-top:1px solid rgba(26,48,80,.4);padding:10px;gap:10px;z-index:200}
+.mobile-bar a{flex:1;text-align:center;padding:10px;border-radius:30px;font-weight:600}
+.mobile-bar a:first-child{background:transparent;border:1px solid #1a3050;color:#8aaac8}
+.mobile-bar a:last-child{background:linear-gradient(135deg,#1a7acc,#4ab8ff);color:#fff}
+.age-gate{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,22,40,.97);backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;z-index:1000}
+.age-gate[hidden]{display:none}
+.age-gate-card{background:rgba(17,29,53,.8);border:1px solid rgba(26,48,80,.4);border-radius:24px;padding:40px;max-width:480px;text-align:center}
+.age-gate-mark{display:inline-block;background:rgba(26,48,80,.5);padding:8px 24px;border-radius:40px;font-size:24px;font-weight:800;color:#4ab8ff}
+.age-gate-card h2{color:#fff;font-size:26px;margin:16px 0 8px}
+.age-gate-card p{color:#8aaac8;margin-bottom:24px}
+.age-gate-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.age-gate-card a{display:block;margin-top:16px;color:#5a7a9a;font-size:14px}
+@media (max-width:1100px){.main-nav a{font-size:11px}.header-actions .btn{padding:6px 14px;font-size:12px}}
+@media (max-width:992px){.hero-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:768px){.menu-button{display:block}.main-nav{display:none;width:100%;flex-direction:column;align-items:stretch;padding:16px 0;gap:8px}.main-nav.open{display:flex}.header-actions{width:100%;justify-content:center;padding-top:12px}.page-hero h1{font-size:30px}.footer-grid{grid-template-columns:1fr}.footer-cta .container{flex-direction:column;text-align:center}.mobile-bar{display:flex}.site-footer{padding-bottom:80px}}
+@media (max-width:480px){.page-hero h1{font-size:24px}.btn.large{padding:12px 24px;font-size:16px}.hero-buttons{flex-direction:column}}
+[hidden]{display:none !important}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#content">К содержанию</a>
+
+<div class="age-gate" data-age-gate>
+<div class="age-gate-card">
+<span class="age-gate-mark">18+</span>
+<p class="eyebrow">Подтверждение возраста</p>
+<h2>Вам уже исполнилось 18 лет?</h2>
+<p>Сайт содержит информацию об азартных играх и предназначен только для совершеннолетних. Азартная игра не является способом заработка.</p>
+<div class="age-gate-actions">
+<button type="button" class="btn primary large" data-age-accept>Да, мне есть 18</button>
+<button type="button" class="btn ghost large" data-age-reject>Мне нет 18</button>
+</div>
+<a href="rules.html">Ответственная игра и ограничения</a>
+</div>
+</div>
+
+<header class="site-header">
+<div class="container header-row">
+<a class="brand" href="index.html"><img src="images/menu-logo.png" alt="Lucky Bear Casino" loading="lazy"></a>
+<button class="menu-button" type="button" data-menu><i class="fas fa-bars"></i> Меню</button>
+<nav class="main-nav" data-nav>
+<a href="index.html">Главная</a>
+<a href="bonus.html">Бонусы</a>
+<a href="games.html">Игры</a>
+<a href="vip.html">VIP</a>
+<a href="app.html">Приложение</a>
+<a href="payments.html">Платежи</a>
+<a href="reviews.html">Отзывы</a>
+<a href="support.html">Поддержка</a>
+<a href="partners.html">Партнёры</a>
+<a href="rules.html">Правила</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+<div class="header-actions">
+<span class="age-badge">18+</span>
+<a class="btn ghost" href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Войти</a>
+<a class="btn primary" href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Регистрация</a>
+</div>
+</div>
+</header>
+
+<main id="content">
+
+<section class="page-hero">
+<div class="container hero-grid">
+<div>
+<span class="eyebrow">Безопасность</span>
+<h1><span class="gradient-text">Безопасность Lucky Bear</span> — как защищён сайт</h1>
+<p>Полный обзор системы безопасности Lucky Bear Casino: SSL/TLS 1.3, защитные заголовки (CSP, HSTS, X-Frame-Options), двухфакторная аутентификация, шифрование данных, защита от фишинга и рекомендации игрокам.</p>
+<div class="hero-buttons">
+<a class="btn primary large" href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Перейти на сайт</a>
+<a class="btn ghost large" href="rules.html">Правила проекта</a>
+</div>
+</div>
+<aside class="stats-card">
+<div><strong>TLS 1.3</strong><span>шифрование</span></div>
+<div><strong>2FA</strong><span>аутентификация</span></div>
+<div><strong>18K+</strong><span>атак отбито</span></div>
+<div><strong>Curaçao</strong><span>лицензия</span></div>
+</aside>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<article class="prose">
+
+<h2>Как защищён сайт Lucky Bear Casino</h2>
+<p>Безопасность игроков — приоритет Lucky Bear Casino. Платформа использует современные технологии шифрования, защитные заголовки и многоуровневую систему аутентификации. За 2025 год система безопасности предотвратила более 18 000 попыток фишинговых атак и более 5 000 попыток несанкционированного доступа к аккаунтам.</p>
+<p>Ниже мы подробно разберём, какие технологии и методы используются для защиты данных, как проверить подлинность сайта и что делать, чтобы не стать жертвой мошенников. Информация актуальна на 2026 год.</p>
+
+<h2>Шифрование соединения</h2>
+<p>Сайт Lucky Bear Casino работает исключительно по протоколу HTTPS с использованием TLS 1.3 — самой современной версии протокола шифрования. Это означает, что все данные, которые вы передаёте (логин, пароль, платёжная информация), зашифрованы и недоступны третьим лицам.</p>
+<p>Сертификат безопасности имеет расширенную проверку (EV), что подтверждает подлинность домена. Перед вводом пароля всегда проверяйте:</p>
+<ul>
+<li>Адрес сайта начинается с https:// (а не http://).</li>
+<li>В адресной строке отображается значок замка.</li>
+<li>Домен совпадает посимвольно — никаких лишних символов, дефисов или замен.</li>
+</ul>
+
+<h2>Защитные заголовки</h2>
+<p>Помимо HTTPS, сайт использует набор защитных HTTP-заголовков, которые блокируют большинство типовых атак:</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Заголовок</th><th>Что делает</th></tr>
+</thead>
+<tbody>
+<tr><td>Content-Security-Policy (CSP)</td><td>Блокирует загрузку сторонних скриптов и предотвращает XSS-атаки</td></tr>
+<tr><td>Strict-Transport-Security (HSTS)</td><td>Принудительно использует HTTPS и блокирует переход на http</td></tr>
+<tr><td>X-Frame-Options</td><td>Запрещает встраивание сайта в iframe — защита от кликджекинга</td></tr>
+<tr><td>X-Content-Type-Options</td><td>Запрещает MIME-sniffing — защита от подмены типа контента</td></tr>
+<tr><td>Permissions-Policy</td><td>Ограничивает доступ к камере, микрофону и геолокации</td></tr>
+<tr><td>Referrer-Policy</td><td>Скрывает реферер при переходе на сторонние ресурсы</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Двухфакторная аутентификация (2FA)</h2>
+<p>Lucky Bear поддерживает двухфакторную аутентификацию через Google Authenticator, SMS и email. Включение 2FA добавляет дополнительный уровень защиты: даже если злоумышленник узнает ваш пароль, он не сможет войти без одноразового кода.</p>
+<p>Рекомендуем использовать Google Authenticator — это надёжнее, чем SMS (которое можно перехватить через подмену SIM-карты). Включить 2FA можно в настройках профиля: «Безопасность» → «Двухфакторная аутентификация».</p>
+
+<h2>Шифрование данных</h2>
+<p>Все персональные данные игроков хранятся в зашифрованном виде. Пароли хешируются с использованием алгоритма bcrypt, платёжные данные не хранятся на серверах казино в открытом виде — они передаются напрямую в платёжные системы через защищённые шлюзы.</p>
+<p>Данные игроков не передаются третьим лицам, за исключением случаев, предусмотренных законом (например, запросов правоохранительных органов). Политика конфиденциальности описывает, какие данные собираются и как они используются.</p>
+
+<h2>Защита от фишинга</h2>
+<p>Фишинг — самая распространённая угроза для игроков онлайн-казино. Мошенники создают копии сайтов, рассылают поддельные письма и пишут в мессенджерах от имени казино. Как распознать фишинг:</p>
+<ul>
+<li>Проверяйте домен посимвольно — мошенники используют похожие адреса (например, lucky-bear-casino.pro вместо official-lucky-bear.pro).</li>
+<li>Не переходите по ссылкам из подозрительных писем и сообщений.</li>
+<li>Сотрудники Lucky Bear никогда не запрашивают пароль, данные карты или одноразовые коды.</li>
+<li>Проверяйте наличие HTTPS и сертификата перед вводом данных.</li>
+<li>При малейших сомнениях — закройте страницу и зайдите на сайт через официальную ссылку.</li>
+</ul>
+
+<h2>Лицензия и юридическая защита</h2>
+<p>Lucky Bear Casino работает на основании лицензии Curaçao GCB 8048/JAZ2020-013. Это означает, что деятельность платформы регулируется и проверяется независимым регулятором. Лицензия обязывает казино соблюдать стандарты честной игры, защищать средства игроков и предоставлять прозрачные условия.</p>
+<p>Игроки могут обратиться в регулирующий орган в случае серьёзных споров, которые не удалось решить через поддержку казино. Это дополнительная защита, которой нет у нелицензированных платформ.</p>
+
+<h2>Рекомендации игрокам</h2>
+<div class="fact-list">
+<div><strong>Пароль</strong><span>уникальный, минимум 12 символов, буквы+цифры+символы</span></div>
+<div><strong>2FA</strong><span>обязательно включите Google Authenticator</span></div>
+<div><strong>Устройство</strong><span>не играйте с чужих устройств и общественных Wi-Fi</span></div>
+<div><strong>Ссылки</strong><span>только с официального сайта, никогда из писем и чатов</span></div>
+<div><strong>Данные</strong><span>никогда не сообщайте пароль, карту и коды третьим лицам</span></div>
+<div><strong>Браузер</strong><span>обновляйте браузер и используйте актуальные версии</span></div>
+</div>
+
+<h2>Что делать при подозрении на взлом</h2>
+<p>Если вы подозреваете, что ваш аккаунт взломали, действуйте немедленно:</p>
+<ul>
+<li>Смените пароль через функцию восстановления доступа.</li>
+<li>Включите двухфакторную аутентификацию, если она не была активна.</li>
+<li>Свяжитесь с поддержкой через официальный сайт — оператор заблокирует подозрительные сессии.</li>
+<li>Проверьте историю транзакций и ставок на наличие подозрительной активности.</li>
+<li>Если использовалась одна и та же почта с другими сервисами — смените пароли и там.</li>
+</ul>
+
+<h2>Частые вопросы о безопасности</h2>
+<div class="faq">
+<details><summary>Безопасно ли играть в Lucky Bear Casino?</summary><p>Да. Платформа использует TLS 1.3, защитные заголовки, 2FA, шифрование данных и работает по лицензии Curaçao. За 2025 год система безопасности отбила более 18 000 фишинговых атак.</p></details>
+<details><summary>Как проверить подлинность сайта?</summary><p>Проверьте домен посимвольно, убедитесь в наличии HTTPS и значка замка, откройте сертификат и проверьте его подлинность. Никогда не переходите по ссылкам из подозрительных писем.</p></details>
+<details><summary>Что такое 2FA и зачем она нужна?</summary><p>2FA — двухфакторная аутентификация. Даже если злоумышленник узнает пароль, он не сможет войти без одноразового кода. Включите Google Authenticator в настройках профиля.</p></details>
+<details><summary>Что делать, если мне пишут от имени казино в мессенджере?</summary><p>Это мошенники. Сотрудники Lucky Bear никогда не пишут первыми в мессенджерах и не запрашивают конфиденциальные данные. Блокируйте контакт и сообщите в поддержку через официальный сайт.</p></details>
+<details><summary>Хранятся ли мои платёжные данные на серверах казино?</summary><p>Платёжные данные не хранятся на серверах казино в открытом виде. Они передаются напрямую в платёжные системы через защищённые шлюзы.</p></details>
+<details><summary>Что делать при подозрении на взлом аккаунта?</summary><p>Смените пароль, включите 2FA, обратитесь в поддержку и проверьте историю транзакций. Если почта использовалась в других сервисах — смените пароли и там.</p></details>
+<details><summary>Какую лицензию имеет Lucky Bear Casino?</summary><p>Казино работает на основании лицензии Curaçao GCB 8048/JAZ2020-013. Это регулируемая лицензия, обязывающая соблюдать стандарты честной игры и защищать средства игроков.</p></details>
+</div>
+
+<h2>Итоги</h2>
+<p>Безопасность Lucky Bear Casino обеспечена современными технологиями: TLS 1.3, защитные заголовки, 2FA, шифрование данных, лицензия Curaçao и многоуровневая защита от фишинга. Игрокам рекомендуется использовать уникальные пароли, включать 2FA, не переходить по подозрительным ссылкам и играть только с надёжных устройств. При малейших сомнениях — обращайтесь в официальную поддержку.</p>
+
+</article>
+</div>
+</section>
+
+</main>
+
+<section class="footer-cta">
+<div class="container">
+<div>
+<span>Безопасность</span>
+<h2>Играйте безопасно в Lucky Bear</h2>
+<p>Современное шифрование, 2FA и лицензия Curaçao. Регистрация — 1 минута.</p>
+</div>
+<a class="btn primary large" href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Играть сейчас</a>
+</div>
+</section>
+
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<div style="display:flex;align-items:center;gap:12px;">
+<img src="images/menu-logo.png" alt="Lucky Bear Casino" style="height:40px;width:auto;">
+<span style="font-size:20px;font-weight:800;color:#fff;">Lucky Bear</span>
+</div>
+<p>Русскоязычный сайт Lucky Bear Casino для совершеннолетних пользователей стран СНГ. Азартная игра не является способом заработка.</p>
+<div class="footer-trust"><span>HTTPS</span><span>18+</span><span>Проверка источников</span></div>
+</div>
+<div><strong>Аккаунт</strong><a href="index.html">Главная</a><a href="bonus.html">Бонусы</a></div>
+<div><strong>Игры</strong><a href="games.html">Каталог игр</a><a href="vip.html">VIP</a></div>
+<div><strong>Приложение</strong><a href="app.html">Приложение</a><a href="payments.html">Платежи</a></div>
+<div><strong>Контакты</strong><a href="contacts.html">Контакты</a><a href="reviews.html">Отзывы</a><a href="support.html">Поддержка</a><a href="partners.html">Партнёрам</a><a href="rules.html">Правила</a><a href="about.html">О проекте</a><a href="faq.html">FAQ</a><a href="security.html">Безопасность</a></div>
+</div>
+<div class="container footer-bottom">
+<span>© 2026 Lucky Bear Casino</span>
+<span>Русская версия · СНГ · 18+</span>
+</div>
+</footer>
+
+<div class="mobile-bar">
+<a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Войти</a>
+<a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Играть</a>
+</div>
+
+<script>
+(function(){
+'use strict';
+var ageGate=document.querySelector('[data-age-gate]');
+var ageAccept=document.querySelector('[data-age-accept]');
+var ageReject=document.querySelector('[data-age-reject]');
+if(localStorage.getItem('ageVerified')==='true'){if(ageGate)ageGate.hidden=true;}
+if(ageAccept){ageAccept.addEventListener('click',function(){localStorage.setItem('ageVerified','true');if(ageGate)ageGate.hidden=true;});}
+if(ageReject){ageReject.addEventListener('click',function(){window.location.href='https://www.google.com';});}
+var menuButton=document.querySelector('[data-menu]');
+var nav=document.querySelector('[data-nav]');
+if(menuButton&&nav){menuButton.addEventListener('click',function(){nav.classList.toggle('open');var expanded=nav.classList.contains('open');menuButton.innerHTML=expanded?'<i class="fas fa-times"></i> Закрыть':'<i class="fas fa-bars"></i> Меню';});}
+})();
+</script>
+</body>
+</html>
