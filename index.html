@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Bear — официальный сайт казино | Обзор, бонусы, игры</title>
+<meta name="description" content="Lucky Bear — официальный сайт онлайн-казино. Обзор платформы, актуальные бонусы, каталог игр, отзывы реальных игроков. Регистрация и вход на официальном зеркале.">
+<meta name="keywords" content="Lucky Bear, Лаки Беар, официальный сайт, казино, бонусы, игровые автоматы, регистрация">
+<link rel="icon" href="images/logo.png" type="image/png">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113327680', 'ym');
+
+    ym(113327680, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113327680" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, #0a1628 0%, #12294d 50%, #0d1f3a 100%);
+    color: #e8eef7;
+    min-height: 100vh;
+    line-height: 1.7;
+}
+a { color: #4fc3f7; text-decoration: none; transition: 0.2s; }
+a:hover { color: #ffd54f; }
+
+/* AGE GATE */
+.agegate-overlay {
+    position: fixed; inset: 0;
+    background: rgba(5, 12, 25, 0.96);
+    backdrop-filter: blur(8px);
+    z-index: 99999;
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px;
+}
+.agegate-box {
+    background: linear-gradient(160deg, #12294d, #0a1628);
+    border: 2px solid #2a4a7a;
+    border-radius: 20px;
+    padding: 45px 40px;
+    max-width: 480px; width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+.agegate-box img { width: 90px; margin-bottom: 20px; }
+.agegate-box h2 { font-size: 26px; color: #ffd54f; margin-bottom: 12px; }
+.agegate-box p { color: #a8bdd6; margin-bottom: 30px; font-size: 15px; }
+.agegate-buttons { display: flex; gap: 15px; justify-content: center; }
+.agegate-buttons a {
+    padding: 14px 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.25s;
+    display: inline-block;
+}
+.btn-yes { background: linear-gradient(135deg, #ffd54f, #ffa726); color: #0a1628 !important; }
+.btn-yes:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255,213,79,0.4); }
+.btn-no { background: #1e3a5f; color: #a8bdd6 !important; border: 1px solid #2a4a7a; }
+.btn-no:hover { background: #2a4a7a; }
+
+/* HEADER */
+header {
+    background: rgba(10, 22, 40, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1e3a5f;
+    position: sticky; top: 0; z-index: 1000;
+}
+.header-top {
+    max-width: 1300px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 25px;
+}
+.logo-wrap { display: flex; align-items: center; gap: 12px; }
+.logo-wrap img { height: 45px; }
+.logo-wrap span { font-size: 22px; font-weight: 800; color: #ffd54f; letter-spacing: 0.5px; }
+.header-cta {
+    background: linear-gradient(135deg, #ffd54f, #ffa726);
+    color: #0a1628 !important;
+    padding: 11px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.25s;
+}
+.header-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(255,213,79,0.4); }
+
+/* NAV */
+nav {
+    background: rgba(13, 31, 58, 0.9);
+    border-bottom: 1px solid #1e3a5f;
+}
+.nav-inner {
+    max-width: 1300px; margin: 0 auto;
+    display: flex; flex-wrap: wrap; gap: 4px;
+    padding: 8px 25px;
+}
+.nav-inner a {
+    padding: 9px 16px;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #a8bdd6;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.nav-inner a:hover, .nav-inner a.active {
+    background: #1e3a5f; color: #ffd54f;
+}
+
+/* HERO */
+.hero {
+    max-width: 1300px; margin: 0 auto;
+    padding: 60px 25px 40px;
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center;
+}
+.hero-text h1 {
+    font-size: 42px; line-height: 1.2; margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffffff, #ffd54f);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero-text .lead {
+    font-size: 17px; color: #a8bdd6; margin-bottom: 25px;
+}
+.hero-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 15px; margin: 30px 0;
+}
+.stat-box {
+    background: rgba(30, 58, 95, 0.5);
+    border: 1px solid #2a4a7a;
+    border-radius: 12px;
+    padding: 18px 12px; text-align: center;
+}
+.stat-box b { display: block; font-size: 24px; color: #ffd54f; }
+.stat-box span { font-size: 12px; color: #a8bdd6; }
+.hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; }
+.btn-primary {
+    background: linear-gradient(135deg, #ffd54f, #ffa726);
+    color: #0a1628 !important;
+    padding: 16px 38px; border-radius: 10px;
+    font-weight: 700; font-size: 16px;
+    display: inline-block; transition: 0.25s;
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(255,213,79,0.45); }
+.btn-secondary {
+    background: rgba(30, 58, 95, 0.7);
+    color: #e8eef7 !important;
+    padding: 16px 38px; border-radius: 10px;
+    font-weight: 600; font-size: 16px;
+    border: 1px solid #2a4a7a;
+    display: inline-block; transition: 0.25s;
+}
+.btn-secondary:hover { background: #2a4a7a; }
+.hero-img {
+    background: rgba(30, 58, 95, 0.35);
+    border: 1px solid #2a4a7a;
+    border-radius: 20px; padding: 25px;
+    text-align: center;
+}
+.hero-img img { width: 100%; max-width: 320px; border-radius: 12px; }
+
+/* SECTIONS */
+.section {
+    max-width: 1300px; margin: 0 auto;
+    padding: 50px 25px;
+}
+.section h2 {
+    font-size: 30px; color: #ffd54f; margin-bottom: 12px;
+    text-align: center;
+}
+.section .subtitle {
+    text-align: center; color: #a8bdd6;
+    margin-bottom: 40px; font-size: 15px;
+}
+.content-block {
+    background: rgba(18, 41, 77, 0.6);
+    border: 1px solid #1e3a5f;
+    border-radius: 14px;
+    padding: 30px 35px;
+    margin-bottom: 25px;
+    font-size: 15.5px;
+    color: #c9d9ec;
+}
+.content-block p { margin-bottom: 16px; }
+.content-block p:last-child { margin-bottom: 0; }
+.content-block h3 { color: #4fc3f7; font-size: 20px; margin-bottom: 14px; }
+
+/* FEATURES */
+.features-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+.feature-card {
+    background: rgba(18, 41, 77, 0.7);
+    border: 1px solid #1e3a5f;
+    border-radius: 14px;
+    padding: 28px 24px;
+    transition: 0.3s;
+}
+.feature-card:hover {
+    border-color: #ffd54f;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+.feature-card .icon {
+    font-size: 32px; margin-bottom: 14px; display: block;
+}
+.feature-card h3 { color: #ffd54f; font-size: 18px; margin-bottom: 10px; }
+.feature-card p { color: #a8bdd6; font-size: 14.5px; }
+
+/* GAMES */
+.games-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+.game-card {
+    background: rgba(18, 41, 77, 0.7);
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+}
+.game-card:hover {
+    border-color: #ffd54f;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+.game-card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.game-card .game-name {
+    padding: 12px 8px; font-size: 13.5px;
+    color: #e8eef7; font-weight: 600;
+}
+
+/* CTA BANNER */
+.cta-banner {
+    max-width: 1300px; margin: 30px auto;
+    background: linear-gradient(135deg, #12294d, #1e3a5f);
+    border: 2px solid #ffd54f;
+    border-radius: 18px;
+    padding: 45px 35px;
+    text-align: center;
+}
+.cta-banner h2 { color: #ffd54f; font-size: 28px; margin-bottom: 15px; }
+.cta-banner p { color: #a8bdd6; margin-bottom: 25px; font-size: 16px; }
+
+/* REVIEWS PREVIEW */
+.reviews-preview {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.review-card {
+    background: rgba(18, 41, 77, 0.7);
+    border: 1px solid #1e3a5f;
+    border-radius: 14px;
+    padding: 24px;
+}
+.review-card .review-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 12px;
+}
+.review-card .review-name { font-weight: 700; color: #4fc3f7; }
+.review-card .review-date { font-size: 13px; color: #7a95b5; }
+.review-card .stars { color: #ffd54f; margin-bottom: 10px; font-size: 15px; }
+.review-card p { color: #c9d9ec; font-size: 14.5px; }
+
+/* FAQ PREVIEW */
+.faq-item {
+    background: rgba(18, 41, 77, 0.7);
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.faq-question {
+    padding: 18px 22px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #e8eef7;
+    display: flex; justify-content: space-between; align-items: center;
+    transition: 0.2s;
+}
+.faq-question:hover { background: rgba(30, 58, 95, 0.6); color: #ffd54f; }
+.faq-question .arrow { color: #ffd54f; transition: 0.3s; }
+.faq-item.active .faq-question .arrow { transform: rotate(180deg); }
+.faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.35s ease;
+    padding: 0 22px;
+    color: #a8bdd6; font-size: 14.5px;
+}
+.faq-item.active .faq-answer {
+    max-height: 500px; padding: 0 22px 20px;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(8, 18, 33, 0.95);
+    border-top: 1px solid #1e3a5f;
+    margin-top: 60px;
+    padding: 45px 25px 25px;
+}
+.footer-inner {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+.footer-col h4 {
+    color: #ffd54f; font-size: 15px; margin-bottom: 15px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+}
+.footer-col a {
+    display: block; color: #a8bdd6;
+    font-size: 14px; padding: 5px 0;
+}
+.footer-col a:hover { color: #ffd54f; }
+.footer-bottom {
+    max-width: 1300px; margin: 30px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid #1e3a5f;
+    text-align: center;
+    color: #7a95b5; font-size: 13px;
+}
+.age-badge {
+    display: inline-block;
+    background: #c62828; color: #fff;
+    padding: 3px 10px; border-radius: 5px;
+    font-weight: 700; font-size: 12px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-text h1 { font-size: 30px; }
+    .nav-inner { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div class="agegate-overlay" id="agegate">
+    <div class="agegate-box">
+        <img src="images/logo.png" alt="Lucky Bear">
+        <h2>Вам уже есть 18 лет?</h2>
+        <p>Доступ к сайту разрешён только совершеннолетним пользователям. Подтвердите свой возраст, чтобы продолжить.</p>
+        <div class="agegate-buttons">
+            <a href="https://lb777.xyz/5dsgV7" class="btn-yes">Да, мне 18+</a>
+            <a href="https://www.google.com" class="btn-no">Нет, мне меньше 18</a>
+        </div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+    <div class="header-top">
+        <div class="logo-wrap">
+            <img src="images/logo.png" alt="Lucky Bear">
+            <span>Lucky Bear</span>
+        </div>
+        <a href="https://lb777.xyz/5dsgV7" class="header-cta">Играть сейчас</a>
+    </div>
+</header>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="active">Главная</a>
+        <a href="obzor.html">Обзор</a>
+        <a href="bonusy.html">Бонусы</a>
+        <a href="igry.html">Игры</a>
+        <a href="platezhi.html">Платежи</a>
+        <a href="otzyvy.html">Отзывы</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakty.html">Контакты</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Lucky Bear — официальный сайт онлайн-казино</h1>
+        <p class="lead">Lucky Bear — это современная игровая платформа, которая объединяет более 5000 автоматов от ведущих провайдеров, щедрые бонусы для новых и постоянных игроков, а также быстрые выплаты без лишних задержек. Мы собрали для вас полный обзор казино: условия регистрации, актуальные акции, каталог игр и честные отзывы.</p>
+        <div class="hero-stats">
+            <div class="stat-box"><b>5000+</b><span>игровых автоматов</span></div>
+            <div class="stat-box"><b>120K+</b><span>активных игроков</span></div>
+            <div class="stat-box"><b>98.7%</b><span>скорость выплат</span></div>
+        </div>
+        <div class="hero-buttons">
+            <a href="https://lb777.xyz/5dsgV7" class="btn-primary">Перейти на официальный сайт</a>
+            <a href="obzor.html" class="btn-secondary">Читать обзор</a>
+        </div>
+    </div>
+    <div class="hero-img">
+        <img src="images/logo.png" alt="Lucky Bear Casino">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>О казино Lucky Bear</h2>
+    <p class="subtitle">Полный обзор платформы, которая пользуется доверием тысяч игроков</p>
+    <div class="content-block">
+        <p>Lucky Bear — это лицензированное онлайн-казино, работающее с 2019 года. За это время платформа заслужила репутацию надёжного оператора, который сочетает в себе широкий выбор игр, честные условия и моментальные выплаты. Казино ориентировано как на новичков, так и на опытных игроков, которые ценят стабильность и высокие лимиты.</p>
+        <p>Интерфейс сайта выполнен в приятной тёмно-синей гамме с золотыми акцентами, что делает навигацию интуитивно понятной даже для тех, кто впервые сталкивается с онлайн-гемблингом. Все разделы логично структурированы: игры, бонусы, платежи, поддержка — всё находится в паре кликов. Отдельное внимание уделено мобильной версии: сайт корректно отображается на смартфонах и планшетах, а также доступно приложение для Android и iOS.</p>
+        <p>Особого упоминания заслуживает служба поддержки. Операторы работают круглосуточно и отвечают в течение 1–2 минут через онлайн-чат. При этом интерфейс платформы переведён на 12 языков, что делает Lucky Bear удобным для игроков из разных стран. Безопасность обеспечивается современным SSL-шифрованием и двухфакторной аутентификацией.</p>
+        <p>Если вы ищете казино с прозрачными правилами, быстрым выводом и широким ассортиментом развлечений — Lucky Bear заслуживает вашего внимания. Ниже мы подробно разберём все ключевые аспекты платформы.</p>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+    <h2>Преимущества Lucky Bear</h2>
+    <p class="subtitle">Почему тысячи игроков выбирают именно эту платформу</p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <span class="icon">🎰</span>
+            <h3>Более 5000 игр</h3>
+            <p>Слоты, рулетка, блэкджек, покер, баккара, live-казино и краш-игры от 80+ провайдеров. Каталог обновляется каждую неделю.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">🎁</span>
+            <h3>Щедрые бонусы</h3>
+            <p>Приветственный пакет до 1500 € + 150 фриспинов, еженедельный кэшбэк до 15%, турниры с призовым фондом от 50 000 €.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">⚡</span>
+            <h3>Быстрые выплаты</h3>
+            <p>Среднее время вывода — 12 минут. Поддерживаются карты, электронные кошельки и криптовалюты. Без скрытых комиссий.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">🔒</span>
+            <h3>Безопасность</h3>
+            <p>Лицензия Кюрасао, SSL-шифрование, двухфакторная аутентификация и политика ответственной игры.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">📱</span>
+            <h3>Мобильная версия</h3>
+            <p>Играйте со смартфона или планшета без потери функциональности. Приложение доступно для Android и iOS.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">💬</span>
+            <h3>Поддержка 24/7</h3>
+            <p>Онлайн-чат, email и Telegram. Среднее время ответа — 1–2 минуты. Русскоязычная поддержка.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GAMES -->
+<section class="section">
+    <h2>Популярные игры</h2>
+    <p class="subtitle">Топ-автоматы и настольные игры, которые выбирают игроки Lucky Bear</p>
+    <div class="games-grid">
+        <div class="game-card"><img src="images/1aac956721b94a89bf443f04075dd6e4.webp" alt="Cleopatra"><div class="game-name">Cleopatra</div></div>
+        <div class="game-card"><img src="images/1ce52f392f80480c85dd7ec7c2201c84.webp" alt="Fish Eye"><div class="game-name">Fish Eye</div></div>
+        <div class="game-card"><img src="images/2bf3a8c0e9b946da9785ca5b7328c32b.webp" alt="Fortune Double"><div class="game-name">Fortune Double</div></div>
+        <div class="game-card"><img src="images/3c31b2ff1d4c452c9ea4b290762b6a45.webp" alt="MoneyFest"><div class="game-name">MoneyFest</div></div>
+        <div class="game-card"><img src="images/4cadc4787e204635a3bba937db264927.webp" alt="Russian Roulette"><div class="game-name">Russian Roulette</div></div>
+        <div class="game-card"><img src="images/4df37c17141a44fdb69121195e1d29d3.webp" alt="Sweet Bonanza Candyland"><div class="game-name">Sweet Bonanza Candyland</div></div>
+        <div class="game-card"><img src="images/883cfa466a2747b58182dd7353793c67.webp" alt="Andar Bahar"><div class="game-name">Andar Bahar</div></div>
+        <div class="game-card"><img src="images/893ae147-8f69-4f7b-a365-7694ae2d07df.webp" alt="Jellyens X"><div class="game-name">Jellyens X</div></div>
+        <div class="game-card"><img src="images/9213d3a237b0450c91431b871dc84dd1.webp" alt="Auto Roulette"><div class="game-name">Auto Roulette</div></div>
+        <div class="game-card"><img src="images/212171bfd0d64079a048ca603ef99c06.webp" alt="Money Time"><div class="game-name">Money Time</div></div>
+        <div class="game-card"><img src="images/anubis-wrath.jpg" alt="Anubis Wrath"><div class="game-name">Anubis Wrath</div></div>
+        <div class="game-card"><img src="images/aviamasters-2.jpg" alt="Avi Masters 2"><div class="game-name">Avi Masters 2</div></div>
+    </div>
+    <div style="text-align:center; margin-top: 35px;">
+        <a href="igry.html" class="btn-secondary">Смотреть все игры</a>
+    </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+    <h2>Готовы испытать удачу в Lucky Bear?</h2>
+    <p>Зарегистрируйтесь прямо сейчас и получите приветственный бонус до 1500 € + 150 фриспинов</p>
+    <a href="https://lb777.xyz/5dsgV7" class="btn-primary">Получить бонус</a>
+</div>
+
+<!-- REVIEWS PREVIEW -->
+<section class="section">
+    <h2>Отзывы игроков</h2>
+    <p class="subtitle">Что говорят реальные пользователи платформы</p>
+    <div class="reviews-preview">
+        <div class="review-card">
+            <div class="review-head">
+                <span class="review-name">Алексей М.</span>
+                <span class="review-date">12.03.2026</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>Играю здесь уже полгода, вывод всегда приходит быстро — максимум 15 минут. Бонусы реально рабочие, а поддержка отвечает моментально. Рекомендую!</p>
+        </div>
+        <div class="review-card">
+            <div class="review-head">
+                <span class="review-name">Марина К.</span>
+                <span class="review-date">05.03.2026</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>Очень удобный интерфейс, много слотов. Особенно нравится раздел с live-казино — дилеры приветливые, трансляция без зависаний. Выплаты честные.</p>
+        </div>
+        <div class="review-card">
+            <div class="review-head">
+                <span class="review-name">Дмитрий С.</span>
+                <span class="review-date">28.02.2026</span>
+            </div>
+            <div class="stars">★★★★☆</div>
+            <p>Хорошее казино, но иногда бывают технические работы. В целом всё устраивает: бонусы дают, вывод без проблем, поддержка помогает быстро.</p>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top: 35px;">
+        <a href="otzyvy.html" class="btn-secondary">Читать все отзывы</a>
+    </div>
+</section>
+
+<!-- FAQ PREVIEW -->
+<section class="section">
+    <h2>Частые вопросы</h2>
+    <p class="subtitle">Ответы на популярные вопросы о Lucky Bear</p>
+
+    <div class="faq-item">
+        <div class="faq-question">Как зарегистрироваться в Lucky Bear? <span class="arrow">▼</span></div>
+        <div class="faq-answer"><p>Регистрация занимает не более минуты. Нажмите кнопку «Играть сейчас», укажите email, придумайте пароль и подтвердите аккаунт. После этого вы сразу получите доступ к приветственному бонусу.</p></div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Сколько времени занимает вывод средств? <span class="arrow">▼</span></div>
+        <div class="faq-answer"><p>Среднее время вывода — 12 минут. В редких случаях обработка занимает до 2 часов, что зависит от выбранного платёжного метода и загруженности системы.</p></div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Есть ли приветственный бонус? <span class="arrow">▼</span></div>
+        <div class="faq-answer"><p>Да, новые игроки получают приветственный пакет до 1500 € + 150 фриспинов на первые четыре депозита. Минимальная сумма пополнения — 10 €.</p></div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Какие платёжные методы поддерживаются? <span class="arrow">▼</span></div>
+        <div class="faq-answer"><p>Банковские карты Visa и Mastercard, электронные кошельки (Skrill, Neteller), криптовалюты (Bitcoin, Ethereum, USDT), а также мобильные платежи.</p></div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Работает ли казино на смартфонах? <span class="arrow">▼</span></div>
+        <div class="faq-answer"><p>Да, сайт полностью адаптирован под мобильные устройства. Также доступно приложение для Android и iOS, которое можно скачать с официального сайта.</p></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>Обзор</h4>
+            <a href="obzor.html">Обзор казино</a>
+            <a href="bonusy.html">Бонусы</a>
+            <a href="platezhi.html">Платежи</a>
+            <a href="providers.html">Провайдеры</a>
+        </div>
+        <div class="footer-col">
+            <h4>Игры</h4>
+            <a href="igry.html">Все игры</a>
+            <a href="mobilnaya.html">Мобильная версия</a>
+            <a href="registraciya.html">Регистрация</a>
+        </div>
+        <div class="footer-col">
+            <h4>Информация</h4>
+            <a href="o-nas.html">О нас</a>
+            <a href="novosti.html">Новости</a>
+            <a href="otzyvy.html">Отзывы</a>
+            <a href="faq.html">FAQ</a>
+            <a href="kontakty.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+            <h4>Правила</h4>
+            <a href="politika.html">Политика конфиденциальности</a>
+            <a href="otvetstvennaya-igra.html">Ответственная игра</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="age-badge">18+</div>
+        <p>© 2026 Lucky Bear. Все права защищены. Азартные игры могут вызвать зависимость. Играйте ответственно.</p>
+    </div>
+</footer>
+
+<script>
+// Age Gate
+document.querySelectorAll('.btn-yes, .btn-no').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.getElementById('agegate').style.display = 'none';
+    });
+});
+
+// FAQ accordion — открывается только один
+document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+        var item = this.parentElement;
+        var wasActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function(i) {
+            i.classList.remove('active');
+        });
+        if (!wasActive) item.classList.add('active');
+    });
+});
+</script>
+
+</body>
+</html>
